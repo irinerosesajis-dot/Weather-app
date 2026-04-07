@@ -1,0 +1,84 @@
+body {
+    font-family: Arial;
+    background-color: linear-gradient(to top,#87CEEB,#dbeafe);
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    color: white;
+}
+
+.container{
+    background-color: rgb(255, 255, 255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+
+}
+
+input{
+    padding: 10px;
+    width: 200px;
+    max-width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.hourly {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+.hour-box {
+    background: rgba(255,255,255,0.2);
+    padding: 5px;
+    border-radius: 8px;
+    min-width: 60px;
+    font-size: 12px;
+}
+button {
+    padding: 10px;
+    background: #1E3A5F;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor:pointer;
+
+}button:hover {
+    background: #284f81;
+}
+#weatheResult{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* 📱 Mobile specific */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
