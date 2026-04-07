@@ -1,32 +1,5 @@
-//  const apiKey="21d0ce66a6274c2600bbab6ad903463f";
 
-// async function getWeather() {
-//     const city=document.getElementById("city").value;
-   
-//     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-//     try{
-//         const response=await fetch(url);
-//         const data =await response.json();
-//         if (data.cod != 200){
-//             document.getElementById("weatherResult").innerHTML="City not found!";
-//             return;
-//         }
-//         displayweather(data);
-//         getHourly(city);
-//         // const temp=data.main.temp;
-//         // const weather=data.weather[0].description;
-//         // document.getElementById("weatherResult").innerHTML=`Temperature: ${temp}°C <br> Condition: ${weather}`;
-//     }
-//     catch(error){
-//         console.log(error);
-//         document.getElementById("weatherResult").innerHTML="Error fetching data!"
-//     }
-// }
-
-// #Auto location
-// 
-const apiKey = "21d0ce66a6274c2600bbab6ad903463f";
+const apiKey = "your_api_key";
 
 // 🔍 Search by city
 async function getWeather() {
